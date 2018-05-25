@@ -1,29 +1,53 @@
 body {
-    background: black url(./images/css_animation_exercise_stage.png) 0 0 no-repeat;
 }
 
 #stage {
   width: 600px;
   height: 600px;
-  background-color: #F4ECEC;
-  outline: dashed;
-  display: block;
   margin-left: auto;
   margin-right: auto;
   background-image: url(css_animation_exercise_4.png);
-  background-repeat: no-repeat;
 }
 
 #hero {
   border-color: red;
   border-style: dashed;
   border-width: thin;
-  top: 21px;
+  top: 20px;
   left: 20px;
-  height: 72px;
-  width: 73px;
+  height: 75px;
+  width: 75px;
+  animation: stag 15s;
   position: relative;
 }
-@@keyframes stage {
+
+@keyframes stag {
+  0% {
+    top: 20px; left: 20px;
+  }
+
+  15% {
+    top: 100px; left: 100px;
+  }
+
+  30% {
+    top: 45px; left: 45px;
+  }
+
+  45% {
+    top: 45px; left: 45px;
+  }
+
+  65% {
+    top: 45px; left: 45px;
+  }
+
+  80% {
+    top: 45px; left: 45px;
+  }
+
+  100% {
+    top: 120px; left: 120px;
+  }
 
 }
