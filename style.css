@@ -10,6 +10,7 @@ body {
 }
 
 #hero {
+  box-sizing: border-box;
   border-color: red;
   border-style: dashed;
   border-width: thin;
@@ -18,9 +19,10 @@ body {
   height: 75px;
   width: 75px;
   position: relative;
-  animation: stage-1, stage-2, stage-3;
-  animation-duration: 5s, 2s, 0.5s;
-  animation-delay: 0s, 5s, 7s;
+  animation: stage-1, stage-2, stage-3, stage-4, stage-5;
+  animation-duration: 5s, 2s, 0.5s, 2.5s, 5s;
+  animation-delay: 0s, 5s, 7s, 9.5s, 12s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes stage-1 {
@@ -42,4 +44,18 @@ body {
       100% {
           top: 200px; left: 270px; transform: rotate(45deg);}
 
+}
+
+@keyframes stage-4 {
+      0% {
+          top: 200px; left: 270px; transform: rotate(45deg);}
+      100% {
+          top: 203px; left: 19px; border-color: blue;}
+}
+
+@keyframes stage-5 {
+      0% {
+          top: 203px; left: 19px;}
+      100% {
+          top: 440px; left: 440px; background: radial-gradient(#FBDA61,#F76B1C); height: 150px; width: 150px; border-radius: 50%; border-style: none;}
 }
