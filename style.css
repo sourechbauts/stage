@@ -50,7 +50,7 @@ body {
       0% {
           top: 200px; left: 270px; transform: rotate(45deg);}
       100% {
-          top: 203px; left: 19px; border-color: blue;}
+          top: 203px; left: 19px; border-color: #0900BD;}
 }
 
 @keyframes stage-5 {
