@@ -13,41 +13,33 @@ body {
   border-color: red;
   border-style: dashed;
   border-width: thin;
-  top: 20px;
-  left: 20px;
+  top: 19px;
+  left: 19px;
   height: 75px;
   width: 75px;
-  animation: stag 15s;
   position: relative;
+  animation: stage-1, stage-2, stage-3;
+  animation-duration: 5s, 2s, 0.5s;
+  animation-delay: 0s, 5s, 7s;
 }
 
-@keyframes stag {
-  0% {
-    top: 20px; left: 20px;
-  }
+@keyframes stage-1 {
+      0% {
+          top: 19px; left: 19px;}
+      100% {
+           top: 19px; left: 500px;}
+      }
+@keyframes stage-2 {
+      0% {
+          top: 19px; left: 500px;}
+      100% {
+          top: 200px; left: 500px;}
+      }
 
-  15% {
-    top: 100px; left: 100px;
-  }
-
-  30% {
-    top: 45px; left: 45px;
-  }
-
-  45% {
-    top: 45px; left: 45px;
-  }
-
-  65% {
-    top: 45px; left: 45px;
-  }
-
-  80% {
-    top: 45px; left: 45px;
-  }
-
-  100% {
-    top: 120px; left: 120px;
-  }
+@keyframes stage-3 {
+      0% {
+          top: 200px; left: 500px;}
+      100% {
+          top: 200px; left: 270px; transform: rotate(45deg);}
 
 }
